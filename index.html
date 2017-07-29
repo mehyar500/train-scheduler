@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Train Scheduler</title>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!--Materialize Compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css"> -->
+          
+
+    <!-- Local Css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    
+  </head>
+  <body>
+  <!-- Container Start-->
+    <div class="container">
+        <div class="row">
+            <div class="col col-12">
+                    <div class="jumbotron">
+         <h1 class="text-center">Train Scheduler</h1>
+     </div>
+
+
+        <!--- panel Start -->
+    <div class="row">
+        <div class="col col-12">
+        <div class="panel panel-info">
+            <div class="panel-heading"><b>Current Train Schedule</b></div>
+
+            <table class="table">
+                <thead>
+                   <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th> 
+                    <th>Frequency (min)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                   </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+        <!--- panel END -->
+    <!--- form -->
+    <div class="row">
+    <div class="col col-12">
+        <div class="form-group has-success">
+            <p class="bg-success"><b>Add Train</b></p>
+
+        <form role="form">
+            <div class="form-group">
+             <label for="Train Name">Train Name</label>
+             <input type="text" class="form-control" id="trainName">
+            </div>
+
+                <div class="form-group">
+                 <label for="Destination">Destination</label>
+                 <input type="text" class="form-control" id="destination">
+                </div>
+
+                <div class="form-group">
+                 <label for="First Train Time">First Train Time (HH:mm - military time)</label>
+                 <input type="time" class="form-control" id="firstTrainTime">
+                </div>
+
+                <div class="form-group">
+                    <label for="Frequency">Frequency (min)</label>
+                    <input type="number" class="form-control" id="frequency">
+                </div>
+
+                <button type="submit" class="btn btn-success submit">Submit</button>
+                <div class="alert alert-danger" role="alert">Please Fill Out Form Completely</div>   
+        </form>
+      </div>
+     </div>
+    </div>
+    <!--- form END -->
+            </div>
+        </div>
+    </div>
+  <!-- Container End -->
+
+    <!--Materialize Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script> -->
+
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Moments JS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!-- local JS file -->
+    <script src="assets/javascript/app.js"></script>
+  </body>
+</html>
